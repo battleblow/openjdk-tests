@@ -9,6 +9,8 @@ test_output_*
 # misc auto generated files
 autoGen.mk
 
+*.tkgj
+
 TestConfig
 functional
 !functional/SyntheticGCWorkload
