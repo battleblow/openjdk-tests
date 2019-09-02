@@ -367,6 +367,8 @@ if [ -e ${output_file} ]; then
 	rm ${output_file}
 fi
 
+sed -i -e 's|#!/bin/bash|#!/usr/bin/env bash|' $TESTDIR/TestConfig/scripts/getSHA.sh
+
 echo "$TESTDIR/TestConfig/scripts/getSHA.sh --repo_dir $TESTDIR --output_file $output_file"
 $TESTDIR/TestConfig/scripts/getSHA.sh --repo_dir $TESTDIR --output_file $output_file
 
